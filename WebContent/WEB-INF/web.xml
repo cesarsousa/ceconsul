@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://java.sun.com/xml/ns/javaee" 
+		xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+							http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+							id="WebApp_ID" version="2.5">
+  <display-name>ceconsul</display-name>
+  
+<servlet>
+	<servlet-name>CadastrarFuncionario</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.CadastrarFuncionarioServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>CadastrarFuncionario</servlet-name>
+	<url-pattern>/cadastrarFuncionario</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>RemoverFuncionario</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.RemoverFuncionarioServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>RemoverFuncionario</servlet-name>
+	<url-pattern>/removerFuncionario</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>ConsultarFuncionario</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.ConsultarFuncionarioServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>ConsultarFuncionario</servlet-name>
+	<url-pattern>/consultarFuncionario</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>ConsultarFuncionarioPeloNome</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.ConsultarFuncionarioPeloNomeServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>ConsultarFuncionarioPeloNome</servlet-name>
+	<url-pattern>/consultarFuncionarioPeloNome</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>RelatorioFuncionario</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.RelatorioFuncionarioServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>RelatorioFuncionario</servlet-name>
+	<url-pattern>/relatorioFuncionarios</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>CadastrarProjeto</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.CadastrarProjetoServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>CadastrarProjeto</servlet-name>
+	<url-pattern>/cadastrarProjeto</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>RemoverProjeto</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.RemoverProjetoServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>RemoverProjeto</servlet-name>
+	<url-pattern>/removerProjeto</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>ConsultarProjeto</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.ConsultarProjetoServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>ConsultarProjeto</servlet-name>
+	<url-pattern>/consultarProjeto</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>RelatorioProjeto</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.RelatorioProjetoServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>RelatorioProjeto</servlet-name>
+	<url-pattern>/relatorioProjetos</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+
+<servlet>
+	<servlet-name>Login</servlet-name>
+	<servlet-class>br.com.ceconsul.servlet.loginServlet</servlet-class>	
+</servlet>
+<servlet-mapping>
+	<servlet-name>Login</servlet-name>
+	<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+<!-- ......................................................................................... -->
+</web-app>
