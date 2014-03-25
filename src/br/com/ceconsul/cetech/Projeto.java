@@ -1,19 +1,18 @@
 package br.com.ceconsul.cetech;
 
-public class Projeto {
-	
+public class Projeto {	
 	
 	private int numero;
 	private String nome;
 	private String dataInicio;
 	private String dataConclusao;
 	private String statusDoProjeto;
-	private String matriculaFuncionario;	
+	private String matriculaFuncionario;
+	private String reponsavel;
 	
 	public Projeto(){
 		this.statusDoProjeto = "Em Andamento";
-	}
-	
+	}	
 	
 	public int getNumero() {
 		return numero;
@@ -60,14 +59,21 @@ public class Projeto {
 	public void setMatriculaFuncionario(String matriculaFuncionario) {
 		this.matriculaFuncionario = matriculaFuncionario;
 	}
-
+	
+	public String getReponsavel() {
+		return reponsavel;
+	}
+	
+	public void setReponsavel(String reponsavel) {
+		this.reponsavel = reponsavel;
+	}
 
 	public String toString() {
 		return "----------------------------------------------------------\n"
-				+ "Nº " + this.numero + "   " + this.nome.toUpperCase() + "  Funcionario(" + 
+				+ "Nï¿½ " + this.numero + "   " + this.nome.toUpperCase() + "  Funcionario(" + 
 				this.matriculaFuncionario + ")" 
 				+ "\t  Data inicio: " + this.dataInicio
-				+ "\t  Data conclusão: " + this.dataConclusao + "  "
+				+ "\t  Data conclusï¿½o: " + this.dataConclusao + "  "
 				+ this.statusDoProjeto;
 	}
 
