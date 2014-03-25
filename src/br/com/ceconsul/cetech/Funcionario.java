@@ -12,8 +12,7 @@ public class Funcionario {
 	private String salario;
 	private String usuario;
 	private String senha;
-	private String dataNascimento;
-	
+	private String dataNascimento;	
 
 	public int getMatricula() {
 		return matricula;
