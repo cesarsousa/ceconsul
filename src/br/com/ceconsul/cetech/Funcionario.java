@@ -1,5 +1,7 @@
 package br.com.ceconsul.cetech;
 
+import java.util.List;
+
 public class Funcionario {
 
 	// private static int numeroMatricula = 1;
@@ -13,7 +15,7 @@ public class Funcionario {
 	private String usuario;
 	private String senha;
 	private String dataNascimento;
-	
+	private List<Projeto> projetos;	
 
 	public int getMatricula() {
 		return matricula;
@@ -97,6 +99,14 @@ public class Funcionario {
 
 	public void setDataNascimento(String dataNascimento) {
 		this.dataNascimento = dataNascimento;
+	}
+	
+	public List<Projeto> getProjetos() {
+		return projetos;
+	}
+	
+	public void setProjetos(List<Projeto> projetos) {
+		this.projetos = projetos;
 	}
 
 	public String toString() {
