@@ -15,7 +15,9 @@ public class Funcionario {
 	private String usuario;
 	private String senha;
 	private String dataNascimento;
-	private List<Projeto> projetos;	
+	private List<Projeto> projetos;
+	
+	private boolean ativo;
 
 	public int getMatricula() {
 		return matricula;
@@ -107,6 +109,14 @@ public class Funcionario {
 	
 	public void setProjetos(List<Projeto> projetos) {
 		this.projetos = projetos;
+	}
+	
+	public boolean isAtivo() {
+		return ativo;
+	}
+	
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
 	}
 
 	public String toString() {
