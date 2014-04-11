@@ -1,5 +1,7 @@
 package br.com.ceconsul.cetech;
 
+import java.util.Date;
+
 public class Projeto {	
 	
 	private int numero;
@@ -9,6 +11,7 @@ public class Projeto {
 	private String statusDoProjeto;
 	private String matriculaFuncionario;
 	private String reponsavel;
+	private Date dataExclusao;
 	
 	private StatusProcessamento statusProcessamento;
 	
@@ -76,6 +79,14 @@ public class Projeto {
 	
 	public void setStatusProcessamento(StatusProcessamento statusProcessamento) {
 		this.statusProcessamento = statusProcessamento;
+	}
+	
+	public Date getDataExclusao() {
+		return dataExclusao;
+	}
+	
+	public void setDataExclusao(Date dataExclusao) {
+		this.dataExclusao = dataExclusao;
 	}
 
 	public String toString() {
