@@ -4,6 +4,7 @@ public enum StatusProcessamento {
 	
 	EmAndamento,
 	Finalizado,
-	Cancelado
+	Cancelado,
+	Paralizado
 
 }
