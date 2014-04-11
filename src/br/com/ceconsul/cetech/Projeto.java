@@ -10,6 +10,8 @@ public class Projeto {
 	private String matriculaFuncionario;
 	private String reponsavel;
 	
+	private StatusProcessamento statusProcessamento;
+	
 	public Projeto(){
 		this.statusDoProjeto = "Em Andamento";
 	}	
@@ -67,15 +69,22 @@ public class Projeto {
 	public void setReponsavel(String reponsavel) {
 		this.reponsavel = reponsavel;
 	}
+	
+	public StatusProcessamento getStatusProcessamento() {
+		return statusProcessamento;
+	}
+	
+	public void setStatusProcessamento(StatusProcessamento statusProcessamento) {
+		this.statusProcessamento = statusProcessamento;
+	}
 
 	public String toString() {
 		return "----------------------------------------------------------\n"
-				+ "N� " + this.numero + "   " + this.nome.toUpperCase() + "  Funcionario(" + 
+				+ "Numero: " + this.numero + "   " + this.nome.toUpperCase() + "  Funcionario(" + 
 				this.matriculaFuncionario + ")" 
 				+ "\t  Data inicio: " + this.dataInicio
-				+ "\t  Data conclus�o: " + this.dataConclusao + "  "
+				+ "\t  Data conclusao: " + this.dataConclusao + "  "
 				+ this.statusDoProjeto;
 	}
-
 	
 }
