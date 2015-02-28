@@ -11,7 +11,7 @@ public class FabricaDeConexao {
 		System.out.println("Conectando o Banco de Dados Cetech.");
 		String url = "jdbc:mysql://localhost/cetech";
 		String usuario = "root";
-		String senha = "";
+		String senha = "root";
 		try {
 			System.out.println("............................tentando conectar");
 			Class.forName("com.mysql.jdbc.Driver");
